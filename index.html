@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>RollDXB</title>
+    <style>
+    * , body{
+        font-family: 'Poppins', sans-serif;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mx-auto px-40">
+        <div class="grid grid-cols-4">
+            <div class="col-span-1 ">
+                <img src="https://res.cloudinary.com/dbgjdb68e/image/upload/v1661889499/logo_right_g1ze07.png" alt="RollDXB" class="w-44">
+            </div>
+            <div class="col-span-3 flex items-center">
+                <div class="text-3xl font-semibold text-center pt-12">
+                    <h1 class="py-1">ROLLER SKATE Classes Agreement</h1>
+                    <h2 class="py-1">DBSJPxROLLDXB</h2>
+                    <h2 class="py-3">TERM 1</h2>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-4 gap-8 pt-8 pb-3">
+            <div class="col-span-3">                
+                <form>
+                    <div class="mb-3 flex items-center">
+                        <label for="StudentName" class="w-44 text-sm font-semibold text-gray-900">Name of student:</label>
+                        <input type="text" id="StudentName" name="StudentName" class=" w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5" placeholder="" required>
+                    </div>
+                    <div class="mb-3 flex items-center">
+                        <label for="Class" class="w-44 text-sm font-semibold text-gray-900">Class:</label>
+                        <input type="text" id="Class" name="Class" class="w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5" placeholder="" required>
+                    </div>
+                    <div class="mb-3 flex items-center">
+                        <label for="GuardianName" class="w-44 text-sm font-semibold text-gray-900">Guardian Name:</label>
+                        <input type="text" id="GuardianName" name="GuardianName" class=" w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5" placeholder="" required>
+                    </div>
+                    <div class="mb-3 flex items-center">
+                        <label for="MobileNumber" class="w-44 text-sm font-semibold text-gray-900">Mobile Number:</label>
+                        <input type="tel" id="MobileNumber" name="MobileNumber" class=" w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5" placeholder="" required>
+                    </div>
+                    <div class="mb-3 flex items-center">
+                        <label for="ShoeSize" class="w-44 text-sm font-semibold text-gray-900">Shoe Size:</label>
+                        <input type="number" id="ShoeSize" name="ShoeSize" class=" w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5" placeholder="" required>
+                    </div>
+                    <div class="mb-3 flex items-center">
+                        <label for="Email" class="w-44 text-sm font-semibold text-gray-900">Email:</label>
+                        <input type="email" id="Email" name="email" class=" w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5" placeholder="" required>
+                    </div>
+                    <div class="mb-3 flex items-center">
+                        <label for="DOB" class="w-44 text-sm font-semibold text-gray-900">Date of birth:</label>
+                        <!-- <input type="text" id="DOB" class="w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5" placeholder="" required> -->
+                        <div class="relative w-full">
+                            <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
+                                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                                </svg>
+                            </div>
+                            <input datepicker type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5" placeholder="">
+                        </div>
+                    </div>
+                    <!-- <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button> -->
+                </form>
+            </div>
+            <div class="col-span-1 flex items-center">
+                <div class="w-[100%] h-[100%] border-[7px] border-sky-500 shadow-xl rounded-md">                    
+                    <label for="photoInput" class="w-full h-full mx-auto bg-gray-50 flex items-center justify-center cursor-pointer rounded-md">
+                        <span id="photoLabel" class="text-gray-500 font-semibold">Click to Upload Photo</span>
+                    </label>
+                    <input type="file" id="photoInput" class="hidden" accept="image/*">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto px-40 py-10">
+        <h1 class="text-lg font-semibold text-gray-900">This Agreement will be validate for 10 weeks starting - from 15th September util 24th November</h1>
+        <div class="py-5">            
+            <ol class="space-y-2 text-base text-gray-800 font-medium list-decimal list-inside">
+                <li>Friday 15th September- Primary Sports Hall</li>
+                <li>Friday 22th September- Primary Sports Hall</li>
+                <li>Friday 29th September - Primary Sports Hall</li>
+                <li>Friday 6th October - Primary Sports Hall</li>
+                <li>Friday 13th October -primary sports hall</li>
+                <li>Friday 27th October - Primary Sports Hall</li>
+                <li>Friday 3rd November - Primary Sports Hall</li>
+                <li>Friday 10th November - Primary sports Hall</li>
+                <li>Friday 17th November- Primary Sports Hall</li>
+                <li>Friday 24th November- Primary Sports Hall</li>
+            </ol>
+        </div>
+        <h1 class="text-base font-medium text-red-600 pb-5">Note all dates above have ben Confirmed by The School; Rolldxb is Not Responsible for any Cancelations or Date Changes done by the school.</h1>
+        <h1 class="text-base font-medium text-gray-900">Every Friday 12:00 pm to 1:00pm</h1>
+        <h1 class="text-base font-medium text-gray-900">Fees:1850 aed (10 classes)</h1>
+        <h1 class="text-base font-semibold text-gray-900 pt-5 pb-3">Payment: link will be sent to all parents via email or Whatsapp after filling this form</h1>
+    </div>
+    <div class="container mx-auto px-40 pb-28">
+        <h1 class="text-center font-medium text-2xl text-sky-500">CONTRACT</h1>
+        <h1 class="text-start font-normal text-base text-sky-500 pt-7 pb-3">Registrations for Terms classes should be for the whole course. (11 sessions)</h1>
+        <h1 class="text-start font-normal text-base text-sky-500 py-1">The full balance owed for registration must be paid IN FULL to reserve a spot in that class of the term. If payment
+            is not made at the time of registration, you may lose your spot. If a class is full, please email us on
+           <a href="mailto:info@rolldxb.com" class="text-blue-600 font-medium underline cursor-pointer">info@rolldxb.com</a> or contact us +97142386206 or +971509007275 to be placed on a wait list for the upcoming group classes.</h1>
+        <h1 class="text-start font-medium text-base text-sky-500 py-5 underline">Terms and conditions:</h1>
+        <div class="pb-5">                       
+            <ul class="space-y-1 text-sky-500 list-disc list-inside">
+                <li>A waiver must be signed before the 1st session. <a href="https://customer.rolldxb.com/" class="text-blue-600 font-medium underline cursor-pointer">(https://customer.rolldxb.com/)</a></li>
+                <li>All sessions must be paid before they start with their 1st session inn class</li>
+                <li>Payments done for classes registrations are non-refundable.</li>
+                <li>Cancellations for sessions are not allowed. No rescheduling.</li>
+                <li>Roll Dxb reserves the right to provide a substitute trainer in the event the original scheduled trainer is unavailable</li>
+                <li>Training sessions are not transferable</li>
+                <li>Balance payment cannot be transferred to other types of membership and/or open sessions can be transferred to someone else.</li>
+                <li>Protection gear is a must in all sessions.</li>
+                <li>All equipment needed will be provided by our company upon parents request. </li>
+            </ul>
+        </div>
+        <div>
+            <h1 class="text-start font-medium text-base text-sky-500 py-5 underline">Representations:</h1>
+            <h1 class="text-start font-normal text-base text-sky-500 py-1">Conditions and medical advice: the client declare that their daughter/son or he/she is on good condition and has
+                no medical conditions, impairment or disability that might prevent the client from using the skates. As such the
+                client acknowledges that Rolldxb has been provided with accurate information prior to signing the contract
+                relating to the clients’ physical condition and/or ability to use training sessions service.</h1>
+        </div>
+        <div>
+            <h1 class="text-start font-medium text-base text-sky-500 py-5 underline">Assumption:</h1>
+            <h1 class="text-start font-normal text-base text-sky-500 py-1">The use of the facility at RollDxb Academy Classes, can involve risk of injury. By signing this agreement, the
+                client understands that the use of this facility, can involve risk of injury. The client understands and voluntarily
+                accepts the risk that RollDxb Academy is not liable for an injury, without limitation, loss or damage to any
+                individual resulting from the negligence or other actions of/at RollDxb premises, events, staff, volunteers,
+                performers…etc.</h1>
+        </div>
+        <div class="py-7">
+            <h1 class="text-base font-semibold text-gray-900 py-1">Client/Guardian signature:</h1>
+            <h1 class="text-base font-semibold text-gray-900 py-1">Date:</h1>
+            <h1 class="text-base font-semibold text-gray-900 py-1">Manager signature:</h1>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/datepicker.min.js"></script>
+<script>
+        const photoInput = document.getElementById('photoInput');
+        const photoLabel = document.getElementById('photoLabel');
+
+        photoInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+
+                reader.onload = (e) => {
+                    const previewURL = e.target.result;
+                    photoLabel.textContent = 'Preview';
+                    document.querySelector('.w-full.h-full').style.backgroundImage = `url('${previewURL}')`;
+                    document.querySelector('.w-full.h-full').style.backgroundSize = 'cover';
+                };
+
+                reader.readAsDataURL(file);
+            } else {
+                photoLabel.textContent = 'Click to Upload';
+                document.querySelector('.w-full.h-32').style.backgroundImage = 'none';
+            }
+        });
+    </script>
+</html>
+
