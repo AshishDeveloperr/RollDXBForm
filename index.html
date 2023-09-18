@@ -15,16 +15,22 @@
         margin: 0;
         box-sizing: border-box;
         }
+        @media only screen and (max-width: 1023px) {
+            .photo-div {
+               height: 340px !important;
+               /* width: 20px !important; */
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="container mx-auto px-40">
+    <div class="container mx-auto px-5 lg:px-40">
         <div class="grid grid-cols-4">
-            <div class="col-span-1 ">
-                <img src="https://res.cloudinary.com/dbgjdb68e/image/upload/v1661889499/logo_right_g1ze07.png" alt="RollDXB" class="w-44">
+            <div class="col-span-4 lg:col-span-1 flex justify-center lg:justify-start">
+                <img src="https://res.cloudinary.com/dbgjdb68e/image/upload/v1661889499/logo_right_g1ze07.png" alt="RollDXB" class="w-40 lg:w-44">
             </div>
-            <div class="col-span-3 flex items-center">
-                <div class="text-3xl font-semibold text-center pt-12">
+            <div class="col-span-4 lg:col-span-3 flex items-center">
+                <div class="text-xl lg:text-3xl font-semibold text-center lg:pt-12 w-[100%] lg:w-auto">
                     <h1 class="py-1">ROLLER SKATE Classes Agreement</h1>
                     <h2 class="py-1">DBSJPxROLLDXB</h2>
                     <h2 class="py-3">TERM 1</h2>
@@ -32,34 +38,34 @@
             </div>
         </div>
         <div class="grid grid-cols-4 gap-8 pt-8 pb-3">
-            <div class="col-span-3">                
+            <div class="col-span-4 lg:col-span-3 order-2 lg:order-1">                
                 <form>
                     <div class="mb-3 flex items-center">
-                        <label for="StudentName" class="w-44 text-sm font-semibold text-gray-900">Name of student:</label>
+                        <label for="StudentName" class="w-44 text-sm font-semibold text-gray-900 pr-1">Name of student:</label>
                         <input type="text" id="StudentName" name="StudentName" class=" w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5" placeholder="" required>
                     </div>
                     <div class="mb-3 flex items-center">
-                        <label for="Class" class="w-44 text-sm font-semibold text-gray-900">Class:</label>
+                        <label for="Class" class="w-44 text-sm font-semibold text-gray-900 pr-1">Class:</label>
                         <input type="text" id="Class" name="Class" class="w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5" placeholder="" required>
                     </div>
                     <div class="mb-3 flex items-center">
-                        <label for="GuardianName" class="w-44 text-sm font-semibold text-gray-900">Guardian Name:</label>
+                        <label for="GuardianName" class="w-44 text-sm font-semibold text-gray-900 pr-1">Guardian Name:</label>
                         <input type="text" id="GuardianName" name="GuardianName" class=" w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5" placeholder="" required>
                     </div>
                     <div class="mb-3 flex items-center">
-                        <label for="MobileNumber" class="w-44 text-sm font-semibold text-gray-900">Mobile Number:</label>
+                        <label for="MobileNumber" class="w-44 text-sm font-semibold text-gray-900 pr-1">Mobile Number:</label>
                         <input type="tel" id="MobileNumber" name="MobileNumber" class=" w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5" placeholder="" required>
                     </div>
                     <div class="mb-3 flex items-center">
-                        <label for="ShoeSize" class="w-44 text-sm font-semibold text-gray-900">Shoe Size:</label>
+                        <label for="ShoeSize" class="w-44 text-sm font-semibold text-gray-900 pr-1">Shoe Size:</label>
                         <input type="number" id="ShoeSize" name="ShoeSize" class=" w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5" placeholder="" required>
                     </div>
                     <div class="mb-3 flex items-center">
-                        <label for="Email" class="w-44 text-sm font-semibold text-gray-900">Email:</label>
+                        <label for="Email" class="w-44 text-sm font-semibold text-gray-900 pr-1">Email:</label>
                         <input type="email" id="Email" name="email" class=" w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5" placeholder="" required>
                     </div>
                     <div class="mb-3 flex items-center">
-                        <label for="DOB" class="w-44 text-sm font-semibold text-gray-900">Date of birth:</label>
+                        <label for="DOB" class="w-44 text-sm font-semibold text-gray-900 pr-1">Date of birth:</label>
                         <!-- <input type="text" id="DOB" class="w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5" placeholder="" required> -->
                         <div class="relative w-full">
                             <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
@@ -73,8 +79,8 @@
                     <!-- <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button> -->
                 </form>
             </div>
-            <div class="col-span-1 flex items-center">
-                <div class="w-[100%] h-[100%] border-[7px] border-sky-500 shadow-xl rounded-md">                    
+            <div class="col-span-4 lg:col-span-1 flex items-center order-1 lg:order-2">
+                <div class="w-[100%] h-[100%] border-[7px] border-sky-500 shadow-xl rounded-md photo-div">                    
                     <label for="photoInput" class="w-full h-full mx-auto bg-gray-50 flex items-center justify-center cursor-pointer rounded-md">
                         <span id="photoLabel" class="text-gray-500 font-semibold">Click to Upload Photo</span>
                     </label>
@@ -83,7 +89,7 @@
             </div>
         </div>
     </div>
-    <div class="container mx-auto px-40 py-10">
+    <div class="container mx-auto px-5 lg:px-40 py-10">
         <h1 class="text-lg font-semibold text-gray-900">This Agreement will be validate for 10 weeks starting - from 15th September util 24th November</h1>
         <div class="py-5">            
             <ol class="space-y-2 text-base text-gray-800 font-medium list-decimal list-inside">
@@ -104,7 +110,7 @@
         <h1 class="text-base font-medium text-gray-900">Fees:1850 aed (10 classes)</h1>
         <h1 class="text-base font-semibold text-gray-900 pt-5 pb-3">Payment: link will be sent to all parents via email or Whatsapp after filling this form</h1>
     </div>
-    <div class="container mx-auto px-40 pb-28">
+    <div class="container mx-auto px-5 lg:px-40 pb-28">
         <h1 class="text-center font-medium text-2xl text-sky-500">CONTRACT</h1>
         <h1 class="text-start font-normal text-base text-sky-500 pt-7 pb-3">Registrations for Terms classes should be for the whole course. (11 sessions)</h1>
         <h1 class="text-start font-normal text-base text-sky-500 py-1">The full balance owed for registration must be paid IN FULL to reserve a spot in that class of the term. If payment
